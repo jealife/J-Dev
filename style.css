@@ -1,0 +1,313 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* height: 100%; */
+}
+
+:root {
+    --background: #283c4c;
+    --dark: #141e26;
+    --primary: #78b4e4;
+    --font: #507898;
+    --normal: #ffffff;
+    --text: #030303;
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--text);
+}
+
+body {
+    overflow-y: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 20px;
+    width: 100%;
+    gap: 10px;
+}
+
+h1,
+h2,
+p,
+span {
+    color: var(--normal);
+}
+
+h1,
+h2 {
+    font-weight: 600;
+}
+
+span {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font);
+}
+
+.flex {
+    display: flex;
+}
+
+.bottom-section,
+.top-section {
+    flex: 1;
+    height: 100%;
+}
+
+/* --------------- top section  --------------------- */
+.top-right {
+    flex: 1;
+    gap: 9px;
+    flex-direction: column;
+}
+
+.top-section {
+    gap: 10px;
+    height: 50%;
+    border-bottom: gray solide 5px;
+}
+
+.top-left {
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 9px;
+
+}
+
+.top-left h1 {
+    font-size: 3rem;
+
+}
+
+.top-top-lef {
+    flex: 3;
+    border-radius: 25px;
+    padding: 10px 15px;
+    position: relative;
+    background-color: var(--background);
+}
+
+.top-top-lef .cv {
+    position: absolute;
+    bottom: 20px;
+    right: 10%;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    background-color: #C86870;
+    color: var(--normal);
+}
+
+.bottom-top-left {
+    width: 100%;
+    display: flex;
+    gap: 9px;
+    justify-content: space-around;
+}
+
+.one,
+.two,
+.three {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    border-radius: 25px;
+    padding: 10px 15px;
+}
+
+.one {
+    background-color: #08B898;
+}
+
+.two {
+    background-color: #f8c038;
+}
+
+.two h2,
+.two span {
+    color: var(--dark);
+}
+
+.three {
+    background-color: #C86870;
+}
+
+.nav {
+    color: var(--normal);
+    width: 100%;
+    border-radius: 15px;
+    background-color: var(--background);
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.section-top-right {
+    width: 100%;
+    gap: 9px;
+    height: 100%;
+}
+
+.infos-links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.name {
+    border-radius: 15px;
+    background-color: var(--background);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name span,
+.title-skills span {
+    color: var(--primary);
+    font-weight: 300;
+}
+
+.name h2 {
+    font-size: 1.2rem;
+}
+
+.skills {
+    border-radius: 15px;
+    background-color: var(--background);
+    padding: 10px;
+    height: 100%;
+}
+
+.skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    justify-content: space-between;
+}
+
+.social-links {
+    border-radius: 15px;
+    background-color: var(--background);
+    padding: 10px;
+    display: flex;
+    gap: 3px;
+    justify-content: space-between;
+}
+
+.profile-picture {
+    height: 100%;
+    flex: 1;
+}
+
+.profile-picture img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 25px;
+    height: 100%;
+}
+
+/* .profile-picture img [title]{
+
+    background-color: #78b4e4;
+    color: #141e26;
+    border-radius: 5px;
+    padding: 5px;
+} */
+
+/* ---------------  portfolio & resume- ----------------- -- */
+
+.bottom-section {
+    width: 100%;
+    height: 100%;
+    gap: 9px;
+    color: var(--normal);
+}
+
+
+.about {
+    flex: 1;
+    gap: 25px;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 15px 15px;
+    background-color: var(--background);
+}
+
+.portfolio {
+    flex: 1;
+    gap: 25px;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 15px 15px;
+    background-color: var(--background);
+}
+
+.about-header,
+.portfolio-header {
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.about .text {
+    height: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        overflow-y: scroll;
+    }
+
+    .top-section,
+    .bottom-section {
+        flex-direction: column-reverse;
+    }
+
+    .top-top-lef {
+        padding: 25px 15px;
+    }
+
+    .top-left h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+
+    }
+
+    .top-top-lef .cv {
+        position: initial;
+        margin-top: 5rem;
+    }
+
+    .profile-picture img {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 15px;
+        height: 100%;
+    }
+
+    .one,
+    .two,
+    .three {
+        border-radius: 15px;
+    }
+}

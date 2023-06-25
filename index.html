@@ -22,6 +22,10 @@
             href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Montserrat:wght@100;200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     </head>
     <body>
         <main>
@@ -51,8 +55,10 @@
                         <div class="logo">
                             <h3>Je-Dev</h3>
                         </div>
-                        <div class="menu">
-                            <a href="#"><span></span><span></span><span></span></a>
+                        <div class="btn-white-mode">
+                            <button class="btn" onclick="onchange()">
+                                <input type="checkbox" id="mode" class="form-check-input">
+                            </button>
                         </div>
                     </div>
                     <div class="section-top-right flex">
@@ -111,5 +117,24 @@
 
             </div>
         </main>
+
+
+
+         <!-- Darck mode switcher -->
+         <script>
+            const modeBtn = document.getElementById('mode');
+            modeBtn.onchange = (e) => {
+                if (modeBtn.checked === true) {
+                    document.documentElement.classList.remove("dark")
+                    document.documentElement.classList.add("light")
+                    window.localStorage.setItem('mode', 'light');
+                } else {
+                    document.documentElement.classList.remove("light")
+                    document.documentElement.classList.add("dark")
+                    window.localStorage.setItem('mode', 'dark');
+    
+                }
+            }
+            </script>
     </body>
 </html>

@@ -15,7 +15,7 @@
     /* --leftShadow: #252E32; */
     --leftShadow: #1a2226;
     --rightShadow: #0a0d0f;
-    --background: #fff;
+    --normal: #fff;
     --font-color: #AEC2D2;
     --blur-bg: #272c2f87;
     --blur-bg: #101518;
@@ -39,8 +39,6 @@
 
 /* mode switcher */
 .btn {
-    position: fixed;
-    top: 1rem;
     right: 2.5rem;
     background: transparent;
     border: none;
@@ -48,7 +46,6 @@
     display: flex;
     align-items: center;
     gap: 2px;
-    z-index: 9999;
 }
 
 
@@ -142,14 +139,14 @@ main {
     min-height: 100dvh;
     padding: 20px;
     width: 100%;
-    gap: 10px;
+    gap: 20px;
 }
 
 h1,
 h2,
 p,
 span {
-    color: var(--normal);
+    color: var(--font-color);
 }
 
 h1,
@@ -180,12 +177,12 @@ a {
 /* --------------- top section  --------------------- */
 .top-right {
     flex: 1;
-    gap: 9px;
+    gap: 24px;
     flex-direction: column;
 }
 
 .top-section {
-    gap: 10px;
+    gap: 24px;
     height: 50%;
     border-bottom: gray solide 5px;
 }
@@ -193,7 +190,7 @@ a {
 .top-left {
     flex: 1;
     flex-wrap: wrap;
-    gap: 9px;
+    gap: 24px;
 
 }
 
@@ -225,7 +222,7 @@ a {
 .bottom-top-left {
     width: 100%;
     display: flex;
-    gap: 9px;
+    gap: 24px;
     justify-content: space-around;
 }
 
@@ -239,7 +236,9 @@ a {
     justify-content: center;
     flex: 1;
     border-radius: 25px;
-    padding: 10px 15px;
+    padding: 10px 15px;    
+    box-shadow: 5px 5px 10px var(--rightShadow), -5px -5px 10px var(--leftShadow);
+
 }
 
 .one {
@@ -252,7 +251,7 @@ a {
 
 .two h2,
 .two span {
-    color: var(--image-bg);
+    color: var(--font);
 }
 
 .three {
@@ -260,7 +259,7 @@ a {
 }
 
 .nav {
-    color: var(--normal);
+    color: var(--font-color);
     width: 100%;
     border-radius: 15px;
     background-color: var(--blur-bg);
@@ -272,7 +271,7 @@ a {
 
 .section-top-right {
     width: 100%;
-    gap: 9px;
+    gap: 24px;
     height: 100%;
 }
 
@@ -280,14 +279,13 @@ a {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 9px;
+    gap: 24px;
 }
 
 .name {
     border-radius: 15px;
     background-color: var(--blur-bg);
-    box-shadow: 11px 11px 15px var(--rightShadow), -11px -11px 15px var(--leftShadow);
-
+    box-shadow: 5px 5px 10px var(--rightShadow), -5px -5px 10px var(--leftShadow);
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -316,7 +314,7 @@ a {
 .skills-icons {
     display: flex;
     flex-wrap: wrap;
-    gap: 3px;
+    gap: 5px;
     justify-content: space-between;
 }
 
@@ -327,13 +325,14 @@ a {
 
     padding: 10px;
     display: flex;
-    gap: 3px;
+    gap: 5px;
     justify-content: space-between;
 }
 
 .profile-picture {
     height: 100%;
     flex: 1;
+    background-color: var(--blur-bg);
 }
 
 .profile-picture img {
@@ -341,6 +340,7 @@ a {
     width: 100%;
     border-radius: 25px;
     height: 100%;
+    box-shadow: 11px 11px 15px var(--rightShadow), -11px -11px 15px var(--leftShadow);
 }
 
 /* .profile-picture img [title]{
@@ -356,18 +356,19 @@ a {
 .bottom-section {
     width: 100%;
     height: 100%;
-    gap: 9px;
+    gap: 24px;
     color: var(--font-color);
 }
 
 
 .about {
     flex: 1;
-    gap: 25px;
+    gap: 24px;
     flex-direction: column;
     border-radius: 25px;
     padding: 15px 15px;
     background-color: var(--blur-bg);
+    box-shadow: 11px 11px 15px var(--rightShadow), -11px -11px 15px var(--leftShadow);
 }
 
 .portfolio {
@@ -377,6 +378,7 @@ a {
     border-radius: 25px;
     padding: 15px 15px;
     background-color: var(--blur-bg);
+    box-shadow: 11px 11px 15px var(--rightShadow), -11px -11px 15px var(--leftShadow);
 }
 
 .about-header,

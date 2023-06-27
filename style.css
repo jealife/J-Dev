@@ -472,6 +472,9 @@ a {
         height: 25%;
         /* display: none; */
         position: absolute;
+        display: flex;
+        align-content: center;
+        justify-content: center;
         bottom: 0;
         left: 0;
         width: 50%;

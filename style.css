@@ -352,7 +352,7 @@ a {
 .profile-picture {
     height: 100%;
     flex: 1;
-    background-color: var(--blur-bg);
+    /* background-color: var(--blur-bg); */
 }
 
 .profile-picture img {
@@ -444,6 +444,7 @@ a {
     }
     .profile-picture{
         margin-bottom: 2.5rem;
+        position: relative;
 
     }
     .profile-picture img {
@@ -454,6 +455,7 @@ a {
         margin-bottom: 2.5rem;
     }
     .social-links{
+        height: 25%;
         /* display: none; */
         position: absolute;
         bottom: 0;

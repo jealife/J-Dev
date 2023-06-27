@@ -215,8 +215,13 @@ a {
     right: 10%;
     padding: 0.5rem 1rem;
     border-radius: 50px;
-    background-color: #C86870;
-    color: var(--link);
+    background-color: var(--image-bg);
+    color: var(--link);transition: .5s;
+    box-shadow: 11px 11px 15px var(--rightShadow), -11px -11px 15px var(--leftShadow);
+}
+.top-top-lef .cv:hover{
+    background: var(--backgroud);
+    box-shadow: inset 11px 11px 15px var(--rightShadow), inset -11px -11px 15px var(--leftShadow);
 }
 
 .bottom-top-left {
@@ -270,6 +275,7 @@ a {
 }
 
 .section-top-right {
+    position: relative;
     width: 100%;
     gap: 24px;
     height: 100%;
@@ -317,16 +323,30 @@ a {
     gap: 5px;
     justify-content: space-between;
 }
-
+.skills-icons i{
+    color: var(--font-color);
+    font-size: 95px;
+}
 .social-links {
     border-radius: 15px;
     background-color: var(--blur-bg);
     box-shadow: 11px 11px 15px var(--rightShadow), -11px -11px 15px var(--leftShadow);
-
     padding: 10px;
     display: flex;
     gap: 5px;
     justify-content: space-between;
+}
+.social-links a{ 
+    transition: all .3s ease-out;
+    padding: 5px;
+    border-radius: 10px;
+    color: var(--font-color);
+    font-size: 2rem;
+
+}
+.social-links a:hover{
+    box-shadow: 9px 9px 9px var(--rightShadow), -9px -9px 9px var(--leftShadow);
+    color: var(--font-color);
 }
 
 .profile-picture {
@@ -413,17 +433,32 @@ a {
         margin-bottom: 2rem;
 
     }
+    .skills-icons i{
+        color: var(--font-color);
+        font-size: 50px;
+    }
 
     .top-top-lef .cv {
         position: initial;
         margin-top: 5rem;
     }
+    .profile-picture{
+        margin-bottom: 2.5rem;
 
+    }
     .profile-picture img {
         object-fit: cover;
         width: 100%;
         border-radius: 15px;
-        height: 100%;
+        height: 220px;
+        margin-bottom: 2.5rem;
+    }
+    .social-links{
+        /* display: none; */
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50%;
     }
 
     .one,

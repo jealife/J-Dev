@@ -312,7 +312,9 @@ a {
     border-radius: 15px;
     background-color: var(--blur-bg);
     box-shadow: 11px 11px 15px var(--rightShadow), -11px -11px 15px var(--leftShadow);
-
+    display: flex;
+    gap: 9px;
+    flex-direction: column;
     padding: 10px;
     height: 100%;
 }
@@ -320,12 +322,12 @@ a {
 .skills-icons {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 9px;
     justify-content: space-between;
 }
 .skills-icons i{
     color: var(--font-color);
-    font-size: 95px;
+    font-size: 50px;
 }
 .social-links {
     border-radius: 15px;
@@ -334,7 +336,7 @@ a {
     padding: 10px;
     display: flex;
     gap: 5px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .social-links a{ 
     transition: all .3s ease-out;
@@ -342,13 +344,25 @@ a {
     border-radius: 10px;
     color: var(--font-color);
     font-size: 2rem;
+    background-color: var(--border-color);
+    padding: 0 5px;
 
 }
 .social-links a:hover{
-    box-shadow: 9px 9px 9px var(--rightShadow), -9px -9px 9px var(--leftShadow);
+    box-shadow: 9px 9px 9px var(--rightShadow), -5px -5px 5px var(--leftShadow);
     color: var(--font-color);
 }
 
+.image-skills{
+    width: 100%;
+    height: max-content;
+}
+.image-skills img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 12px;
+    height: 100%;
+}
 .profile-picture {
     height: 100%;
     flex: 1;

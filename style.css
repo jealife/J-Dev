@@ -468,13 +468,17 @@ a {
         height: 220px;
         margin-bottom: 2.5rem;
     }
-    .social-links{
+    .social-links {
         height: 25%;
         /* display: none; */
         position: absolute;
         bottom: 0;
         left: 0;
         width: 50%;
+    }
+    .social-links a{
+        padding: 0;
+        background-color: transparent;
     }
 
     .one,

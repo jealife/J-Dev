@@ -268,7 +268,7 @@ a {
     width: 100%;
     border-radius: 15px;
     background-color: var(--blur-bg);
-    padding: 10px;
+    padding: 18px;
     justify-content: space-between;
     box-shadow: 11px 11px 15px var(--rightShadow), -11px -11px 15px var(--leftShadow);
 
